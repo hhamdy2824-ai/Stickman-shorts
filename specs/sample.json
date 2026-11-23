@@ -1,0 +1,514 @@
+{
+ "id": "sample",
+ "music": "reflective-piano.mp3",
+ "musicVolume": 0.32,
+ "segments": [
+  {
+   "type": "split",
+   "dur": 600,
+   "story": [
+    {
+     "from": 0,
+     "to": 120,
+     "text": "Same stone.\n100 days.",
+     "highlight": "100 days."
+    },
+    {
+     "from": 120,
+     "to": 420,
+     "text": "One plans the perfect push...",
+     "highlight": "perfect"
+    },
+    {
+     "from": 420,
+     "to": 600,
+     "text": "Ideas don't roll.\nMotion does.",
+     "font": "type"
+    }
+   ],
+   "top": {
+    "label": "Doer",
+    "actor": {
+     "character": "hero",
+     "x": 330,
+     "loop": {
+      "poses": [
+       "push",
+       "push2"
+      ],
+      "every": 14,
+      "move": [
+       0,
+       240
+      ]
+     }
+    },
+    "props": [
+     {
+      "name": "Boulder",
+      "x": [
+       620,
+       860
+      ],
+      "s": 1.25,
+      "spin": 0.5,
+      "params": {
+       "round": [
+        0,
+        1
+       ]
+      }
+     }
+    ],
+    "lampXs": [
+     460,
+     820
+    ]
+   },
+   "bottom": {
+    "label": "Overthinker",
+    "actor": {
+     "character": "rival",
+     "x": 360,
+     "keys": [
+      [
+       0,
+       "point"
+      ],
+      [
+       80,
+       "think"
+      ],
+      [
+       200,
+       "point"
+      ],
+      [
+       320,
+       "facepalm"
+      ],
+      [
+       420,
+       "think"
+      ],
+      [
+       520,
+       "sadStand"
+      ]
+     ],
+     "mood": [
+      [
+       0,
+       "normal"
+      ],
+      [
+       320,
+       "sad"
+      ]
+     ]
+    },
+    "props": [
+     {
+      "name": "Whiteboard",
+      "x": 200,
+      "params": {
+       "drawing": [
+        0,
+        1
+       ]
+      }
+     },
+     {
+      "name": "Boulder",
+      "x": 680,
+      "s": 1.25,
+      "params": {
+       "round": 0
+      }
+     }
+    ],
+    "lampXs": [
+     360,
+     760
+    ]
+   },
+   "divider": {
+    "caption": "Same stone",
+    "prefix": "DAY ",
+    "from": 1,
+    "to": 100
+   },
+   "fx": [
+    {
+     "type": "burst",
+     "panel": "top",
+     "kind": "dust",
+     "x": 560,
+     "y": -6,
+     "at": [
+      30,
+      90,
+      150,
+      210,
+      270,
+      330,
+      390,
+      450
+     ],
+     "count": 10,
+     "power": 0.6,
+     "dir": -150,
+     "spread": 60
+    }
+   ]
+  },
+  {
+   "type": "rows",
+   "dur": 540,
+   "story": [
+    {
+     "from": 0,
+     "to": 150,
+     "text": "When life throws bricks at you",
+     "highlight": "bricks"
+    }
+   ],
+   "rows": [
+    {
+     "label": "Discipline",
+     "mindset": "discipline",
+     "actor": {
+      "character": "discipline",
+      "x": 420,
+      "loop": {
+       "poses": [
+        "carry",
+        "stand"
+       ],
+       "every": 22
+      },
+      "hold": {
+       "name": "Brick",
+       "s": 0.9
+      }
+     },
+     "props": [
+      {
+       "name": "BrickWall",
+       "x": 760,
+       "s": 0.9,
+       "params": {
+        "rows": 4,
+        "cols": 4,
+        "built": [
+         0,
+         1
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "label": "Motivation",
+     "mindset": "motivation",
+     "actor": {
+      "character": "motivation",
+      "x": 520,
+      "keys": [
+       [
+        0,
+        "cheer"
+       ],
+       [
+        120,
+        "carry"
+       ],
+       [
+        220,
+        "sweat"
+       ],
+       [
+        300,
+        "sit"
+       ],
+       [
+        400,
+        "slump"
+       ]
+      ],
+      "mood": [
+       [
+        0,
+        "happy"
+       ],
+       [
+        220,
+        "sad"
+       ]
+      ]
+     },
+     "props": [
+      {
+       "name": "Brick",
+       "x": 700,
+       "y": [
+        -200,
+        0
+       ],
+       "at": [
+        100,
+        130
+       ]
+      }
+     ]
+    },
+    {
+     "label": "Anger",
+     "mindset": "anger",
+     "actor": {
+      "character": "anger",
+      "x": 480,
+      "loop": {
+       "poses": [
+        "punch",
+        "stand"
+       ],
+       "every": 12
+      },
+      "mood": "angry"
+     }
+    }
+   ],
+   "fx": [
+    {
+     "type": "burst",
+     "row": 2,
+     "kind": "debris",
+     "x": 600,
+     "y": -150,
+     "at": [
+      24,
+      72,
+      120,
+      168,
+      216,
+      264,
+      312
+     ],
+     "count": 12,
+     "dir": -60,
+     "spread": 200
+    },
+    {
+     "type": "impact",
+     "row": 2,
+     "x": 600,
+     "y": -150,
+     "at": [
+      24,
+      72,
+      120,
+      168,
+      216,
+      264,
+      312
+     ],
+     "color": "#FF5252"
+    }
+   ],
+   "shakes": [
+    {
+     "at": 120,
+     "power": 8
+    },
+    {
+     "at": 264,
+     "power": 10
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "dur": 690,
+   "title": "Same 2 hours",
+   "lights": "lamps",
+   "lampXs": [
+    280,
+    800
+   ],
+   "story": [
+    {
+     "from": 0,
+     "to": 200,
+     "text": "Same 2 hours every night.",
+     "highlight": "2 hours"
+    },
+    {
+     "from": 380,
+     "to": 600,
+     "text": "One year later...",
+     "highlight": "year"
+    }
+   ],
+   "actors": [
+    {
+     "character": "rival",
+     "x": 280,
+     "keys": [
+      [
+       0,
+       "sitPhone"
+      ],
+      [
+       560,
+       "sitPhone"
+      ],
+      [
+       600,
+       "sadStand"
+      ]
+     ],
+     "mood": [
+      [
+       0,
+       "normal"
+      ],
+      [
+       560,
+       "sad"
+      ]
+     ],
+     "hold": {
+      "name": "Phone",
+      "s": 1.2
+     }
+    },
+    {
+     "character": "hero",
+     "x": 690,
+     "loop": {
+      "poses": [
+       "typing",
+       "typing"
+      ],
+      "every": 8,
+      "to": 540
+     },
+     "keys": [
+      [
+       560,
+       "stand"
+      ],
+      [
+       600,
+       "cheer"
+      ]
+     ],
+     "mood": [
+      [
+       0,
+       "normal"
+      ],
+      [
+       600,
+       "happy"
+      ]
+     ]
+    }
+   ],
+   "props": [
+    {
+     "name": "Sofa",
+     "x": 300,
+     "s": 0.85
+    },
+    {
+     "name": "TV",
+     "x": 300,
+     "y": 1020,
+     "s": 0.65
+    },
+    {
+     "name": "Desk",
+     "x": 800,
+     "s": 1.0
+    },
+    {
+     "name": "OfficeChair",
+     "x": 690,
+     "s": 0.9
+    },
+    {
+     "name": "Laptop",
+     "x": 800,
+     "y": 1268,
+     "s": 1.1
+    },
+    {
+     "name": "Trophy",
+     "x": 900,
+     "y": 1268,
+     "s": 0.8,
+     "show": [
+      560,
+      690
+     ]
+    },
+    {
+     "name": "Calendar",
+     "x": 540,
+     "y": 980,
+     "s": 0.8,
+     "params": {
+      "day": "365"
+     },
+     "show": [
+      380,
+      690
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "type": "burst",
+     "kind": "confetti",
+     "x": 700,
+     "y": 1100,
+     "at": 600,
+     "count": 40,
+     "power": 1.2
+    },
+    {
+     "type": "light",
+     "x": 700,
+     "y": 1180,
+     "at": 590
+    }
+   ]
+  }
+ ],
+ "end": {
+  "question": "Which one are you?",
+  "highlight": "you",
+  "frames": 75
+ },
+ "sfx": [
+  {
+   "src": "whoosh.wav",
+   "at": 600
+  },
+  {
+   "src": "whoosh.wav",
+   "at": 1140
+  },
+  {
+   "src": "thud.wav",
+   "at": 1260
+  },
+  {
+   "src": "win.wav",
+   "at": 1740,
+   "volume": 0.7
+  }
+ ]
+}

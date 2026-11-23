@@ -1,0 +1,31 @@
+{
+ "id": "motion-test",
+ "music": "rising-hope.mp3",
+ "segments": [
+  {
+   "type": "scene",
+   "dur": 240,
+   "title": "Motion test",
+   "lights": "lamps",
+   "lampXs": [300, 780],
+   "story": [{"from": 0, "to": 240, "text": "Walk. Jump. Punch.", "highlight": "Punch."}],
+   "actors": [
+    {"character": "hero", "x": 160, "loop": {"poses": ["walkA", "walkB"], "every": 9, "to": 90, "move": [0, 300]},
+     "keys": [[100, "crouch", 300], [112, "jump", 300], [130, "stand", 300], [150, "punch", 300], [160, "stand", 300], [172, "punch", 300], [182, "cheer", 300]],
+     "mood": [[0, "normal"], [182, "happy"]]},
+    {"character": "rival", "x": 820, "keys": [[0, "stand"], [150, "stand"], [156, "sweat", 20], [174, "fallen", 60]], "mood": [[0, "normal"], [150, "shocked"]], "flip": true}
+   ],
+   "props": [
+    {"name": "Box", "x": 640, "y": [700, 1380], "at": [20, 60], "ease": "drop"},
+    {"name": "Brick", "x": 560, "y": [600, 1366], "at": [40, 80], "ease": "drop", "r": [0, 180]}
+   ],
+   "fx": [
+    {"type": "burst", "kind": "dust", "x": 460, "y": 1380, "at": [130], "count": 14},
+    {"type": "impact", "x": 690, "y": 1180, "at": [156, 176]},
+    {"type": "burst", "kind": "sparks", "x": 690, "y": 1180, "at": [156, 176], "count": 16, "dir": 0, "spread": 120}
+   ],
+   "shakes": [{"at": 156, "power": 10}, {"at": 176, "power": 14}]
+  }
+ ],
+ "sfx": [{"src": "thud.wav", "at": 130}, {"src": "crack.wav", "at": 156}, {"src": "crack.wav", "at": 176}, {"src": "win.wav", "at": 182, "volume": 0.6}]
+}
