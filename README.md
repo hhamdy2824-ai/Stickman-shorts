@@ -41,3 +41,4 @@ Code: MIT. Fonts: Inter, Courier Prime, Special Elite (SIL Open Font License). M
 2. Write the story lines, tracks (poses over time), props (`back` / `front` per panel), effects and end card.
 3. Register in `src/Root.tsx`, check stills: `npx remotion still V001-Title out/check.png --frame=120 --scale=0.4`
 4. Render only when approved: `npx remotion render V001-Title out/V001-Title.mp4 --crf=20`
+Stickman shorts project
